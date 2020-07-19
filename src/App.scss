@@ -31,6 +31,8 @@ html {
 
 body {
 	line-height: 1;
+	font-size: 2rem;
+	font-family: 'Raleway', sans-serif;
 }
 
 ol, ul {
@@ -50,4 +52,81 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+.menu-container {
+	display: flex;
+	flex-direction: column;
+
+	#menu-nav {
+		display: flex;
+		font-size: 1.8rem;
+		border-bottom: 1px solid grey;
+		padding: 20px;
+
+		a {
+			margin: 0 10px;
+			margin-bottom: -20px;
+			padding: 20px 0;
+			color: inherit;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+				//border-bottom: 1px solid black;
+			}
+		}
+	}
+
+	h1 {
+		font-size: 5rem;
+		text-align: center;
+		padding: 20px 0;
+	}
+}
+
+section#menu {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+
+	h2 {
+		font-weight: bold;
+		margin-left: 20px;
+		margin-top: 30px;
+		text-transform: capitalize;
+		text-decoration: underline;
+	}
+
+	.item-list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.food-item {
+		border: 1px solid grey;
+		margin: 20px;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		max-width: 400px;
+		width: 350px;
+
+		.food-name, .food-desc {
+			margin-bottom: 5px;
+		}
+
+		.food-name {
+			font-weight: 500;
+		}
+
+		.food-price {
+			font-style: italic;
+		}
+	}
+}
+
+.sticky {
+	position: fixed;
 }
