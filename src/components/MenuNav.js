@@ -1,26 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-const MenuNav = () => {
-    const [scrolled, setScrolled] = useState(false);
-
-    const handleScroll = () => {
-        const offset = window.scrollY;
-        if(offset > 130) {
-            setScrolled(true);
-        }else{
-            setScrolled(false);
-        }
-    }
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        }
-    }, [])
-    
+const MenuNav = props => {
     return (
-        <nav id='menu-nav' className={scrolled ? 'sticky' : ''}>
+        <nav id='menu-nav' className={props.scrolled ? 'sticky' : ''}>
             <a href='#breakfast-burritos'>Breakfast Burritos</a>
             <a href='#omelette'>Omelettes</a>
             <a href='#quesadillas'>Quesadillas</a>

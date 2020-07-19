@@ -1,13 +1,34 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import menu from '../data/menu';
 import FoodItem from './FoodItem';
 import MenuNav from './MenuNav';
 
-const Menu = props => {
+const Menu = () => {
+    const [scrolled, setScrolled] = useState(false);
+
+    const handleScroll = () => {
+        const offset = window.scrollY;
+        const menuNav = document.getElementById('menu-nav');
+        if(offset > menuNav.offsetHeight) {
+            setScrolled(true);
+        }else{
+            setScrolled(false);
+        }
+    }
+    
+    useEffect(() => {
+        document.title = "El Jefe's | Menu";
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            document.title = "El Jefe's";
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }, [])
+
     return (
         <div className='menu-container'>
             <h1>Our Menu</h1>
-            <MenuNav />
+            <MenuNav scrolled={scrolled}/>
             <section id='menu'>
                 <div>
                     <span id='breakfast-burritos'></span>
