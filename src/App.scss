@@ -187,8 +187,36 @@ section#menu {
 }
 
 section#locations {
+	font-size: 2.4rem;
+	
 	h1 {
 		text-align: center;
 		padding: 20px 0;
+	}
+
+	.location {
+		margin: 40px;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		border-bottom: 1px solid lightgrey;
+		padding: 30px;
+
+		.hours h3 {
+			font-weight: 500;
+			text-decoration: underline;
+		}
+
+		ul {
+			line-height: 2;
+		}
+
+		@media (max-width: 800px) {
+			flex-direction: column;
+
+			address {
+				margin-bottom: 30px;
+			}
+		}
 	}
 }
