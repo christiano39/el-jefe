@@ -61,6 +61,8 @@ table {
 
 	#menu-nav {
 		display: flex;
+		flex-wrap: wrap;
+		box-sizing: border-box;
 		font-size: 1.8rem;
 		border-bottom: 1px solid lightgrey;
 		padding: 20px;
@@ -81,7 +83,8 @@ table {
 		}
 
 		@media (max-width: 1310px) {
-			display: none;
+			// display: none;
+			font-size: 1.6rem;
 		}
 	}
 
@@ -116,7 +119,6 @@ section#menu {
 		padding: 20px;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		max-width: 400px;
 		width: 350px;
 
@@ -128,14 +130,26 @@ section#menu {
 			font-weight: 500;
 		}
 
+		.food-desc {
+			font-size: 1.8rem;
+		}
+
 		.food-price {
 			font-style: italic;
+		}
+
+		@media (max-width: 900px) {
+			width: 35%;
+		}
+
+		@media (max-width: 650px) {
+			width: 80%;
 		}
 	}
 
 	div span {
 		position: relative;
-		top: -60px;
+		top: -130px;
 	}
 }
 

@@ -9,7 +9,7 @@ const Menu = () => {
     const handleScroll = () => {
         const offset = window.scrollY;
         const menuNav = document.getElementById('menu-nav');
-        if(offset > menuNav.offsetHeight) {
+        if(offset > menuNav.offsetTop) {
             setScrolled(true);
         }else{
             setScrolled(false);
