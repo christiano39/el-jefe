@@ -1,12 +1,29 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
+import Home from './components/Home';
 import Menu from './components/Menu';
+import Locations from './components/Locations';
 import './App.scss';
+import Navigation from './components/Navigation';
 
 function App() {
   return (
     <div className="App">
-      <Menu />
+      <Navigation />
+      <Switch>
+        <Route path='/menu'>
+          <Menu />
+        </Route>
+
+        <Route path='/locations'>
+          <Locations />
+        </Route>
+
+        <Route exact path='/'>
+          <Home />
+        </Route>
+      </Switch>
     </div>
   );
 }
