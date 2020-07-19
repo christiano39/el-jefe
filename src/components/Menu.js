@@ -9,7 +9,8 @@ const Menu = props => {
             <h1>Our Menu</h1>
             <MenuNav />
             <section id='menu'>
-                <div id='breakfast-burritos'>
+                <div>
+                    <span id='breakfast-burritos'></span>
                     <h2 className='main-header'>Breakfast Burritos</h2>
                     <div className='item-list'>
                         {menu.breakfastBurritos.map(food => {
@@ -17,7 +18,8 @@ const Menu = props => {
                         })}
                     </div>
                 </div>
-                <div id='omelette'>
+                <div>
+                    <span id='omelette'></span>
                     <h2 className='main-header'>Omelettes</h2>
                     <div className='item-list'>
                         {menu.omelet.map(food => {
@@ -25,7 +27,8 @@ const Menu = props => {
                         })}
                     </div>
                 </div>
-                <div id='quesadillas'>
+                <div>
+                    <span id='quesadillas'></span>
                     <h2 className='main-header'>Quesadillas</h2>
                     <div className='item-list'>
                         {menu.quesadillas.map(food => {
@@ -33,7 +36,8 @@ const Menu = props => {
                         })}
                     </div>
                 </div>
-                <div id='lunch-dinner-burritos'>
+                <div>
+                    <span id='lunch-dinner-burritos'></span>
                     <h2 className='main-header'>Lunch and Dinner Burritos</h2>
                     <div className='item-list'>
                         {menu.lunchDinnerBurritos.map(food => {
@@ -41,7 +45,8 @@ const Menu = props => {
                         })}
                     </div>
                 </div>
-                <div id='tacos'>
+                <div>
+                    <span id='tacos'></span>
                     <h2 className='main-header'>Tacos</h2>
                     <div className='item-list'>
                         {menu.tacos.map(food => {
@@ -49,7 +54,8 @@ const Menu = props => {
                         })}
                     </div>
                 </div>
-                <div id='chimichanga-and-burgers'>
+                <div>
+                    <span id='chimichanga-and-burgers'></span>
                     <h2 className='main-header'>Chimichangas and Burgers</h2>
                     <div className='item-list'>
                         {menu.chimichangaAndBurgers.map(food => {
@@ -57,7 +63,8 @@ const Menu = props => {
                         })}
                     </div>
                 </div>
-                <div id='combos'>
+                <div>
+                    <span id='combos'></span>
                     <h2 className='main-header'>Combo Meals</h2>
                     <div className='item-list'>
                         {menu.comboMeals.map(food => {
@@ -65,7 +72,8 @@ const Menu = props => {
                         })}
                     </div>
                 </div>
-                <div id='sides'>
+                <div>
+                    <span id='sides'></span>
                     <h2 className='main-header'>Sides</h2>
                     <div className='item-list'>
                         {menu.sides.map(food => {
@@ -73,7 +81,8 @@ const Menu = props => {
                         })}
                     </div>
                 </div>
-                <div id='beverages'>
+                <div>
+                    <span id='beverages'></span>
                     <h2 className='main-header'>Beverages</h2>
                     <div className='item-list'>
                         {menu.beverages.map(food => {

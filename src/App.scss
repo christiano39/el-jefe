@@ -61,8 +61,10 @@ table {
 	#menu-nav {
 		display: flex;
 		font-size: 1.8rem;
-		border-bottom: 1px solid grey;
+		border-bottom: 1px solid lightgrey;
 		padding: 20px;
+		width: 100%;
+		background-color: white;
 
 		a {
 			margin: 0 10px;
@@ -75,6 +77,10 @@ table {
 				text-decoration: underline;
 				//border-bottom: 1px solid black;
 			}
+		}
+
+		@media (max-width: 1310px) {
+			display: none;
 		}
 	}
 
@@ -104,7 +110,7 @@ section#menu {
 	}
 
 	.food-item {
-		border: 1px solid grey;
+		border: 1px solid lightgrey;
 		margin: 20px;
 		padding: 20px;
 		display: flex;
@@ -125,8 +131,16 @@ section#menu {
 			font-style: italic;
 		}
 	}
+
+	div span {
+		position: relative;
+		top: -60px;
+	}
 }
 
 .sticky {
 	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: grey;
 }
