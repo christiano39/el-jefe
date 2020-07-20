@@ -194,6 +194,10 @@ section#menu {
 				font-weight: 500;
 			}
 		}
+
+		.nav-active {
+			border-bottom: 2px solid $light-color;
+		}
 	}
 
 	.logo {
@@ -208,7 +212,7 @@ section#menu {
 		}
 	}
 
-	@media (max-width: 545px) {
+	@media (max-width: 730px) {
 		flex-direction: column;
 		
 		#main-nav {

@@ -14,9 +14,9 @@ const Navigation = () => {
                 <span>Tacos and Burrritos</span>
             </div>
             <nav id='main-nav'>
-                <NavLink exact to='/'>Home</NavLink>
-                <NavLink to='/menu'>Menu</NavLink>
-                <NavLink to='/locations'>Locations</NavLink>
+                <NavLink exact to='/' activeClassName='nav-active'>Home</NavLink>
+                <NavLink to='/menu' activeClassName='nav-active'>Menu</NavLink>
+                <NavLink to='/locations' activeClassName='nav-active'>Locations</NavLink>
             </nav>
         </div>
     )
