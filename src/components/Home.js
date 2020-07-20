@@ -10,7 +10,7 @@ const Home = () => {
     
     return (
         <section id='homepage'>
-            <h1>Home</h1>
+            <h1>Welcome to El Jefe!</h1>
         </section>
     )
 }

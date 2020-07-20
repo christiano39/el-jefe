@@ -95,12 +95,11 @@ h1 {
 
 			&:hover {
 				text-decoration: underline;
-				//border-bottom: 1px solid black;
 			}
 		}
 
-		@media (max-width: 1310px) {
-			//display: none;
+		@media (max-width: 900px) {
+			display: none;
 			font-size: 1.6rem;
 		}
 	}
