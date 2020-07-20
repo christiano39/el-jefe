@@ -1,7 +1,10 @@
+$green: #7ffaa0;
+
 $main-font-color: black;
 $secondary-font-color: white;
-$main-bg-color: white;
-$light-color: lightgrey;
+$main-bg-color: #f4fff0;
+$secondary-bg-color: $green;
+$light-color: #fc5656;
 
 
 html, body, div, span, applet, object, iframe,
@@ -41,6 +44,7 @@ body {
 	line-height: 1;
 	font-size: 2rem;
 	font-family: 'Raleway', sans-serif;
+	background-color: $main-bg-color;
 }
 
 ol, ul {
@@ -107,6 +111,10 @@ h1 {
 	}
 }
 
+#menu-nav.sticky {
+	background-color: $secondary-bg-color;
+}
+
 section#menu {
 	display: flex;
 	flex-direction: column;
@@ -171,6 +179,7 @@ section#menu {
 	align-items: center;
 	border-bottom: 1px solid $main-font-color;
 	box-shadow: 0px 2px 2px -2px rgba(0,0,0,0.75);
+	background-color: $secondary-bg-color;
 
 	#main-nav {
 		display: flex;
@@ -187,10 +196,16 @@ section#menu {
 		}
 	}
 
-	h2 {
-		margin: 25px 50px;
-		font-size: 4rem;
+	.logo {
+		display: flex;
+		align-items: center;
 		cursor: pointer;
+
+		h2 {
+			margin: 25px 50px;
+			margin-right: 10px;
+			font-size: 4rem;
+		}
 	}
 
 	@media (max-width: 545px) {
