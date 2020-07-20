@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 
 const Home = () => {
     useEffect(() => {
-        document.title = "El Jefe's | Home";
+        document.title = "El Jefe | Home";
         return () => {
-            document.title = "El Jefe's"
+            document.title = "El Jefe"
         }
     }, [])
     

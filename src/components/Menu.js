@@ -17,10 +17,10 @@ const Menu = () => {
     }
     
     useEffect(() => {
-        document.title = "El Jefe's | Menu";
+        document.title = "El Jefe | Menu";
         window.addEventListener('scroll', handleScroll);
         return () => {
-            document.title = "El Jefe's";
+            document.title = "El Jefe";
             window.removeEventListener('scroll', handleScroll);
         }
     }, [])

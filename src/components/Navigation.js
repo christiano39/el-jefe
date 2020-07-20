@@ -9,7 +9,7 @@ const Navigation = () => {
     
     return (
         <div className='nav-container'>
-            <h2 onClick={goHome}>El Jefe's</h2>
+            <h2 onClick={goHome}>El Jefe</h2>
             <nav id='main-nav'>
                 <NavLink exact to='/'>Home</NavLink>
                 <NavLink to='/menu'>Menu</NavLink>

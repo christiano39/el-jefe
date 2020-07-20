@@ -5,9 +5,9 @@ import Location from './Location';
 
 const Locations = () => {
     useEffect(() => {
-        document.title = "El Jefe's | Locations";
+        document.title = "El Jefe | Locations";
         return () => {
-            document.title = "El Jefe's";
+            document.title = "El Jefe";
         }
     }, [])
     
