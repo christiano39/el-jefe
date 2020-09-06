@@ -83,6 +83,9 @@ section#homepage {
 		img {
 			max-width: 60%;
 			margin: 15px;
+			border: 3px solid $green;
+			padding: 10px;
+			border-radius: 5px;
 		}
 
 		div.cta {
