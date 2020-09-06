@@ -72,6 +72,54 @@ h1 {
 	padding: 20px 0;
 }
 
+section#homepage {
+	display: flex;
+	flex-direction: column;
+
+	div.main {
+		display: flex;
+		align-items: center;
+
+		img {
+			max-width: 60%;
+			margin: 15px;
+		}
+
+		div.cta {
+			font-size: 3.2rem;
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			button {
+				box-shadow:inset 0px 1px 0px 0px #caefab;
+				background:linear-gradient(to bottom, #77d42a 5%, $green 100%);
+				background-color:#77d42a;
+				border-radius:6px;
+				border:1px solid #268a16;
+				display:inline-block;
+				cursor:pointer;
+				color:#000;
+				font-family:Arial;
+				font-size:15px;
+				font-weight:bold;
+				padding:6px 24px;
+				text-decoration:none;
+				text-shadow:0px 1px 0px #aade7c;
+				margin: 20px;
+				font-size: 2.4rem;
+				width: 20%;
+
+				&:hover {
+					background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+					background-color:#5cb811
+				}
+			}
+		}
+	}
+}
+
 .menu-container {
 	display: flex;
 	flex-direction: column;
