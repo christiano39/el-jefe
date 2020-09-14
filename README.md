@@ -1,3 +1,5 @@
+Deployed App: https://el-jefe.vercel.app/
+
 # El Jefe Tacos and Burritos
 
 This app was built for a local restaurant who did not yet have a website.
